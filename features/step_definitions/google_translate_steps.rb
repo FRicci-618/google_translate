@@ -13,12 +13,12 @@ When(/^I set the (source|target) language$/) do |source_target|
   if source_target == 'source'
     @translate_page.more_source_languages_button.fire_event :onclick
     @translate_page.source_language_div(@test_config['source_language']).fire_event :onclick
-    @translate_page.more_source_languages_button.fire_event :onclick
+    @translate_page.translate_text_button.fire_event :onclick
     @translate_page.selected_source_language(@test_config['source_language']).wait_until &:present?
   else
     @translate_page.more_target_languages_button.fire_event :onclick
     @translate_page.target_language_div(@test_config['target_language']).fire_event :onclick
-    @translate_page.more_target_languages_button.fire_event :onclick
+    @translate_page.translate_text_button.fire_event :onclick
     @translate_page.selected_target_language(@test_config['target_language']).wait_until &:present?
   end
 end

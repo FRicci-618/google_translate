@@ -64,4 +64,8 @@ class TranslatePage
     @browser.span(text: '...')
   end
 
+  def translate_text_button
+    @browser.button(aria_label: 'Text translation')
+  end
+
 end
