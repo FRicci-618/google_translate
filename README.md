@@ -7,6 +7,8 @@ The following tests can be found in `google_translate.feature`:
 2. Translate a phrase, then swap languages and verify the result
 3. Translate a phrase, swap languages, then enter a phrase on the on-screen keyboard and verify the result
 
-The tests use the values found in `test_config.yaml`. To run the tests, assuming you have `ruby-2.6.5` installed, run the following command:
+The tests use the values found in the config file `test_config.yaml`.
+
+To run the tests, assuming you have `ruby-2.6.5`, `Google Chrome v103.x`, and `ChromeDriver 103.x`,  installed, run the following command:
 
 `cucumber features/ --color -r features -f pretty --publish-quiet`
