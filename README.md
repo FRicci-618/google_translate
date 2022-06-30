@@ -4,8 +4,8 @@ This project contains a series of tests to automate the Google Translate applica
 
 The following tests can be found in `google_translate.feature`:
 1. Translate a phrase and verify the result
-2. Translate a phrase, then swap languages and verify the result
-3. Translate a phrase, swap languages, then enter a phrase on the on-screen keyboard and verify the result
+2. Swap languages and verify the result
+3. Clear the source language field, enter a phrase using the on-screen keyboard and verify the result
 
 The tests use the values found in the config file `test_config.yaml`.
 
